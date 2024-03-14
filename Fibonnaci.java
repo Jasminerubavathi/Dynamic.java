@@ -1,0 +1,21 @@
+public class Fibonnaci {
+   public static int fib(int n){
+        int[] table = new int[n+1];
+        table[0]=0;
+        table[1]=2;
+        for(int i=2;i<=n;i++){
+            table[i]=table[i-1]+table[i-2];
+            System.out.println(table[i]+"");
+        }
+        
+    
+    
+    return table[n];
+    }
+    public static void main(String[] args) {
+        int n=5;
+        fib(n);
+    }
+}
+        
+     
